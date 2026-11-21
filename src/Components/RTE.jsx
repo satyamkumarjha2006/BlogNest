@@ -4,7 +4,7 @@ import { Controller } from 'react-hook-form';
 
 function RTE({name , label , control , defaultValue = ""}) {
     return ( 
-        <div className='w-full '>
+        <div className='w-full max-w-full '>
             {label && <label className='inline-block mb-1 pl-1'> {label}</label>}
 
             <Controller
