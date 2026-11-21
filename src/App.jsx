@@ -23,7 +23,7 @@ function App() {
   },[])
 
   return !loading ? (
-    <div className="min-h-screen flex flex-wrap content-between bg-slate-950">
+    <div className="w-full min-h-screen flex flex-wrap content-between bg-slate-950">
       <div className="w-full block">
         <Header/>
         <main className="py-52" >
