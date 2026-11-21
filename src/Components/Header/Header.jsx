@@ -37,16 +37,16 @@ function Header() {
   ]
 
     return ( 
-        <header className='py-3 shadow bg-slate-900 w-full max-w-full'>
+        <header className='py-3 shadow bg-slate-900 w-full man-w-full'>
             <Container>
-                <nav className='flex '>
+                <nav className='flex w-full min-w-0 flex-nowrap items-center justify-between gap-1'>
                     <div className='mr-4 text-transparent bg-linear-to-r from-purple-400 to-pink-400 bg-clip-text font-extrabold'>
                         <Link to='/'>
                         <Logo width='70px'/>
                         </Link>
                     </div>
 
-                    <ul className='flex ml-auto text-transparent bg-linear-to-r from-purple-400 to-pink-400 bg-clip-text font-extrabold hover:cursor-pointer '>
+                    <ul className='flex flex-nowrap items-center gap-1 whitespace-nowrap ml-auto text-transparent bg-linear-to-r from-purple-400 to-pink-400 bg-clip-text font-extrabold hover:cursor-pointer '>
                         {navItems.map((item) => 
                         item.active ? (
                             <li key={item.name}>
