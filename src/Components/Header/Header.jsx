@@ -39,20 +39,20 @@ function Header() {
     return ( 
         <header className='w-full py-3 shadow bg-slate-900'>
             <Container>
-                <nav className='flex flex-col gap-3 sm:flex-row sm:items-center'>
-                    <div className='mr-4 shrink-0 text-center sm:text-left text-transparent bg-linear-to-r from-purple-400 to-pink-400 bg-clip-text font-extrabold'>
+                <nav className='flex'>
+                    <div className='mr-4 text-transparent bg-linear-to-r from-purple-400 to-pink-400 bg-clip-text font-extrabold'>
                         <Link to='/'>
                         <Logo width='70px'/>
                         </Link>
                     </div>
 
-                    <ul className='flex flex-wrap items-center justify-center gap-2 sm:justify-end sm:ml-auto text-transparent bg-linear-to-r from-purple-400 to-pink-400 bg-clip-text font-extrabold hover:cursor-pointer '>
+                    <ul className='flex ml-auto text-transparent bg-linear-to-r from-purple-400 to-pink-400 bg-clip-text font-extrabold hover:cursor-pointer '>
                         {navItems.map((item) => 
                         item.active ? (
                             <li key={item.name}>
                                 <button 
                                 onClick={() => navigate(item.slug)}
-                                className='inline-bock whitespace-nowrap text-sm sm:px-6 sm:text-base px-3 py-2 duration-200 rounded-full hover:text-white hover:cursor-pointer'
+                                className='inline-bock px-6 py-2 duration-200 rounded-full hover:text-white hover:cursor-pointer'
                                 >{item.name}</button>
                             </li>
                         ) : null
